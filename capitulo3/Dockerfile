@@ -6,4 +6,6 @@ RUN apt-get update
 
 RUN apt-get install -y nginx
 
-EXPOSE 80
+ADD exemplo /etc/nginx/sites-enabled/default
+
+EXPOSE 8080
