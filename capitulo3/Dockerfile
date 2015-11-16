@@ -12,4 +12,6 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 EXPOSE 8080
 
-CMD service nginx start
+ENTRYPOINT ["/etc/init.d/nginx"]
+
+CMD ["start"]
